@@ -28,11 +28,11 @@ contract JointSavings {
     - A variable of type `address public` named `lastToWithdraw`
     - Two variables of type `uint public` named `lastWithdrawAmount` and `contractBalance`.
     */
-    address payable accountOne
-    address payable accountTwo
-    address public lastToWithdraw
-    uint public lastWithdrawAmount
-    uint public contractBalance
+    address payable accountOne;
+    address payable accountTwo;
+    address public lastToWithdraw;
+    uint public lastWithdrawAmount;
+    uint public contractBalance;
 
     /*
     Define a function named **withdraw** that will accept two arguments.
@@ -49,7 +49,7 @@ contract JointSavings {
         /*
         Define a `require` statement that checks if the `balance` is sufficient to accomplish the withdraw operation. If there are insufficient funds, the text `Insufficient funds!` is returned.
         */
-        require (address(this).contractBalance >= amount, "Insufficient Funds");
+        require (address(this).balance >= amount, "Insufficient Funds");
             
         /*
         Add and `if` statement to check if the `lastToWithdraw` is not equal to (`!=`) to `recipient` If `lastToWithdraw` is not equal, then set it to the current value of `recipient`.
@@ -59,10 +59,10 @@ contract JointSavings {
         }
 
         // Call the `transfer` function of the `recipient` and pass it the `amount` to transfer as an argument.
-        // YOUR CODE HERE!
+        recipient.transfer(amount);
 
         // Set  `lastWithdrawAmount` equal to `amount`
-        lastToWithdraw = amount;
+        lastWithdrawAmount = amount;
 
         // Call the `contractBalance` variable and set it equal to the balance of the contract by using `address(this).balance` to reflect the new balance of the contract.
         contractBalance = address(this).balance;

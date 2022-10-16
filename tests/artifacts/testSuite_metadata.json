@@ -1,0 +1,117 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "beforeAll",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "checkFailure",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "checkSenderAndValue",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "checkSuccess",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "checkSuccess2",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {
+				"beforeAll()": {
+					"notice": "'beforeAll' runs before all other tests More special functions are: 'beforeEach', 'beforeAll', 'afterEach' & 'afterAll'"
+				},
+				"checkSenderAndValue()": {
+					"notice": "Custom Transaction Context: https://remix-ide.readthedocs.io/en/latest/unittesting.html#customization #sender: account-1 #value: 100"
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"tests/joint_savings_test.sol": "testSuite"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"joint_savings.sol": {
+			"keccak256": "0x78771ea71c280f8f27d342338a8384a65d868495ba3215369df055e5296c8046",
+			"urls": [
+				"bzz-raw://8f46ae56dbf0e8082db31bd15cc21dcdd2d3ff2cec73646460ec058f2347d3e9",
+				"dweb:/ipfs/QmWU5QxPQysjK6MJyotBQ1o2Eu8gAxUS2iSV8513Mvf52i"
+			]
+		},
+		"remix_accounts.sol": {
+			"keccak256": "0x198a94b8e0342a81c31fda8ba387964155802ef81807e01e83e2320682dce327",
+			"urls": [
+				"bzz-raw://db7d9939731e6fe2030d53b80f57ce2c1f8044209c1c67e634e81160227d3019",
+				"dweb:/ipfs/QmRLYhZ2Y6bfh83QSD2hCnhVFejevzh77zUTohCCC8yCtu"
+			]
+		},
+		"remix_tests.sol": {
+			"keccak256": "0xe2783cdc204cba8c72494119339f1d90f9022b15d6c718c668b7f097d8e29787",
+			"urls": [
+				"bzz-raw://bb6a22e64c7f16bcaab63b1c1a1b269d5be8a6d37bdd9dec1718477ab916b18e",
+				"dweb:/ipfs/QmdkW1tT5iadBvaHMCoskhDGZKnfdg8o1D9CcoQYtdJet7"
+			]
+		},
+		"tests/joint_savings_test.sol": {
+			"keccak256": "0xaaa0957d3c2a334c0cfa32182675db09d0817d86e516ae7e6428d35747c2873a",
+			"urls": [
+				"bzz-raw://6628d3b626acdfab881cb54fdb230b0a235895ba54321618e16c1f41a17ce1d1",
+				"dweb:/ipfs/QmQJEAAxRe8zb35z7LAaUj8CreX8ffXKF6YH9mmaZojDvD"
+			]
+		}
+	},
+	"version": 1
+}
